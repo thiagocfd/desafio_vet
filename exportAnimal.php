@@ -1,7 +1,7 @@
 <?php
     if(isset($_POST['exportAnimal']))
     {
-        $connect = mysqli_connect("localhost", "root", "", "complicadovet");
+        $connect = mysqli_connect("localhost", "root", "admin123", "complicadovet");
         header('Content-Type: text/csv; charset=utf-8');
         header('Content-Disposition: attachment; filename=animal.csv');
         $output = fopen ("php://output", "w");
